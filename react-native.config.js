@@ -1,3 +1,3 @@
 module.exports={
-    assets: ['./assets/Roboto'],
+    assets: ['./assets/Roboto/'],
 };
