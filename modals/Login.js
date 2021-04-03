@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, TextInput, ImageBackground, Button } from 'react-native';
 
 import RoundButton from '../components/button/RoundButton'
 
-export default function Login() {
+export default function Login( props ) {
 
     return (
         <ImageBackground source={require('../assets/bluePurpleBG.jpg')} style={ styles.modalBackground }>
@@ -19,6 +19,7 @@ export default function Login() {
                 />
             </View>
             <RoundButton title='Submit' />
+            <Button onPress={() => props.updateModal(false)} title="Close" />
         </ImageBackground>
     )
 }

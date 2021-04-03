@@ -10,21 +10,27 @@ import ListenInIcon from './assets/Title-img-1.svg'
 
 export default function App() {
 
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [signInOpen, setSignInOpen] = useState(false);
   const [resetOpen, setResetOpen] = useState(false);
 
   return (
     <ImageBackground source={require('./assets/bluePurpleBG.jpg')} style={ styles.background }>
+
       {/* ListenIn title */}
       <View>
         <ListenInIcon height={250} width={250} />
       </View>
+      
       {/* Logo png */}
       <Image style={ styles.logo } source={require('./assets/Logo-Pink.png')} />
-      {/* Buttons */}
+
+      {/* Login Button and Sign Up Button */}
       <View style={ styles.alignButton }> 
-        <RoundButton title='Login'/>
-        <RoundButton title='Sign Up' />
+        <RoundButton updateModal={setLoginOpen} title='Login'/>
+        <RoundButton updateModal={signInOpen => setSignInOpen(signInOpen)} title='Sign Up' />
       </View>
+      
       {/* Reset password */}
       <TouchableOpacity style={{bottom: 100}} onPress={() => setResetOpen(true)}>
         <View>
@@ -34,15 +40,19 @@ export default function App() {
         </View>
       </TouchableOpacity>
 
-      {/* MUST HAVE ROUND BUTTON COMPONENT TRIGGER STATE BELOW */}
-      <Modal visible={false}>
-        <Login />
+      {/* Login Modal */}
+      <Modal visible={loginOpen} animationType='slide'>
+        <Login updateModal={setLoginOpen} />
       </Modal>
-      <Modal visible={false}>
-        <SignIn />
+
+      {/* Sign In Modal */}
+      <Modal visible={signInOpen} animationType='slide' >
+        <SignIn updateModal={setSignInOpen} />
       </Modal>
-      <Modal visible={resetOpen}>
-        <ResetPassword />
+
+      {/* Reset Password Modal */}
+      <Modal visible={resetOpen} animationType='slide'>
+        <ResetPassword updateModal={setResetOpen}/>
       </Modal>
 
     </ImageBackground>

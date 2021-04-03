@@ -2,12 +2,12 @@ import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function RoundButton( {title} ) {
+export default function RoundButton( props ) {
 
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.updateModal(true)}>
             <View style={ styles.button }>
-                <Text style={ styles.buttonText }>{ title }</Text>
+                <Text style={ styles.buttonText }>{ props.title }</Text>
             </View>
         </TouchableOpacity>
     )
