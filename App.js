@@ -6,6 +6,7 @@ import RoundButton from './components/button/RoundButton'
 import Login from './modals/Login'
 import SignIn from './modals/SignIn'
 import ResetPassword from './modals/ResetPassword'
+import Home from './modals/Home'
 import ListenInIcon from './assets/Title-img-1.svg'
 
 export default function App() {
@@ -53,6 +54,11 @@ export default function App() {
       {/* Reset Password Modal */}
       <Modal visible={resetOpen} animationType='slide'>
         <ResetPassword updateModal={setResetOpen}/>
+      </Modal>
+
+      {/* Home page modal */}
+      <Modal visible={true} animationType='fade'>
+        <Home />
       </Modal>
 
     </ImageBackground>
