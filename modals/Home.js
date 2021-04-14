@@ -12,13 +12,15 @@ export default function Home() {
   //  npm install --save react-native-base64
   //  npm install axios
 
-  // const spotify = Credentials();
-  // This is temporary, find a way to store in 'Credentials.js'
-  // const ClientId = '03c67f932dff416184ddc219b8c56a8c';
-  // const ClientSecret = '7cf4430a4fa849c9a0200563277463b5';
-
   const [token, setToken] = useState('');
-  const [playlist, setPlaylist] = useState([]);
+  // const [playlist, setPlaylist] = useState([]);
+
+  const [card, setCard] = useState([]);
+  // let isApiLoaded = false;
+
+  // let loadCardFlag = false;
+  const [loading, isLoading] = useState(true);
+  let userName = 'theadoxbox';
 
 
   useEffect(() => {
@@ -33,16 +35,18 @@ export default function Home() {
       method: 'POST'
     })
     .then(tokenResponse => {
-      // USESTATE TOKEN
+      // Set token to access token
       setToken(tokenResponse.data.access_token);
 
-      // Fetch all public playlists from a user
-      axios('https://api.spotify.com/v1/users/theadoxbox/playlists', {
+      // Fetch all public playlists from a user theadoxbox 12162983687
+      axios(`https://api.spotify.com/v1/users/${userName}/playlists`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
       })
       .then(playlistResponse => {
-        // USESTATE: setPlaylist(playlistResponse.items);
+
+        // Create temporary array to store all cards
+        let tempCard = [];
 
         // Fetch all tracks from all public playlists from a user
         for (let i = 0; i < playlistResponse.data.total; i++)
@@ -53,33 +57,56 @@ export default function Home() {
             headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
           })
           .then(trackResponse => {
-            ////////////////////////
-            // TESTING CODE
-            // console.log(trackResponse.data.items[0].track.album.images[1].url);
-            ////////////////////////
 
-            // Printing playlist name followed by all tracks for that playlist
-            console.log('============ ' + playlistResponse.data.items[i].name + ' ============');
+            let loadCardFlag = false;
 
-            // Printing in format of '#.) <Track Name>'
+            // Loop over tracks in each playlist
             for (let j = 0; j < trackResponse.data.total; j++)
             {
-              console.log((j + 1) + '.) ' + trackResponse.data.items[j].track.name);
               
-              ///////////////
-              if (trackResponse.data.items[j].track.album.images[1].url)
-                console.log('URL: ' + trackResponse.data.items[j].track.album.images[1].url);
-              ///////////////
-                console.log();
+              // Store all cards into temporary array
+              tempCard.push({
+                // <View>
+                //   <Text>{ playlistResponse.data.items[i].name }</Text>
+                //   <Text>{ trackResponse.data.items[j].track.album.artists[0].name }</Text>
+                //   <Text>{ trackResponse.data.items[j].track.name }</Text>
+                // </View>
+
+                // <Image source={trackResponse.data.items[j].track.album.images[1].url} />
+
+                playlist: playlistResponse.data.items[i].name ? playlistResponse.data.items[i].name : '',
+                artist: trackResponse.data.items[j].track.album.artists[0].name ? trackResponse.data.items[j].track.album.artists[0].name : '',
+                song: trackResponse.data.items[j].track.name ? trackResponse.data.items[j].track.name : '',
+              });
+              // url: trackResponse.data.items[j].track.album.images[1].url ? trackResponse.data.items[j].track.album.images[1].url : ''
+              // console.log(trackResponse.data.items[j].track.album.images[1].url);
+              // if (tempCard.length == totalTracks) loadCardFlag = true;
+            }
+            
+            // console.log('i: ' + i);
+            // console.log('playlistResponse.data.total: ' + playlistResponse.data.total);
+            // console.log(card[j].song);
+            if (loadCardFlag)
+            {
+              console.log("card now set to tempCard and length printed");
+              setCard(tempCard);
+              console.log('card length: ' + card.length);
+              console.log("Api no longer loading");
+              isLoading(false);
+              // console.log(card[0].artist);
             }
           })
-          // Used to catch and print errors
-          // .catch(e => {
-          //   console.log(e);
-          // })
-
+          // console.log('reached here')
         }
+
+
+        // Set card array to temporary array - prevents constant appending
+        // for (let i = 0; i < card.length; i++)
+        //   console.log(card[i]);
+        // console.log(card.length);
+        // console.log();
       })
+
 
     });
 
@@ -90,6 +117,8 @@ export default function Home() {
   //   Alert.alert(item);
  
   // }
+
+  // while (!isApiLoaded) {}
 
   return (
 
@@ -105,6 +134,18 @@ export default function Home() {
         {/* <Text>Hello</Text> */}
         {/* <Text> { playlist[0].name } </Text> */}
       {/* </View> */}
+
+      {/* <View style={{color: 'white'}}> */}
+        { }
+        {/* <Image style={{width: 100, height: 100}} source={{uri: 'https://i.scdn.co/image/ab67616d00001e02b8c0135a218de2d10a8435f5'}} /> */}
+      {/* </View> */}
+
+      {loading ? (
+        <Text style={{color: 'white'}}>Loading</Text>
+        ) : (
+        <Text style={{color: 'white'}}>Done Loading</Text>
+        // <Text style={{color: 'white'}}>{card[0].song}{card[16].song}</Text>
+      )}
 
     </ImageBackground>
 
