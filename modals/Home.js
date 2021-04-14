@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useStateRef } from 'react';
 import { StyleSheet, View, Button, Image, ImageBackground, Text, Modal, TouchableOpacity } from 'react-native';
 
 import base64 from 'react-native-base64';
 import { ClientId, ClientSecret } from './Credentials';
 import axios from 'axios';
-
 
 export default function Home() {
 
@@ -16,10 +15,13 @@ export default function Home() {
   // const [playlist, setPlaylist] = useState([]);
 
   const [card, setCard] = useState([]);
-  // let isApiLoaded = false;
-
-  // let loadCardFlag = false;
   const [loading, isLoading] = useState(true);
+  const [add, setAdd] = useState(0);
+
+  const addIncrement = () => {
+    setAdd((add + 1) % card.length);
+  }
+
   let userName = 'theadoxbox';
 
 
@@ -37,81 +39,78 @@ export default function Home() {
     .then(tokenResponse => {
       // Set token to access token
       setToken(tokenResponse.data.access_token);
-
+      
       // Fetch all public playlists from a user theadoxbox 12162983687
       axios(`https://api.spotify.com/v1/users/${userName}/playlists`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
       })
       .then(playlistResponse => {
-
+        
+        // Create an array of promises that need to be fulfilled
+        let promises = [];
         // Create temporary array to store all cards
         let tempCard = [];
 
         // Fetch all tracks from all public playlists from a user
         for (let i = 0; i < playlistResponse.data.total; i++)
         {
-          // Fetching all tracks from all playlists
-          axios(playlistResponse.data.items[i].tracks.href, {
-            method: 'GET',
-            headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
-          })
-          .then(trackResponse => {
+          promises.push(
+            // Fetching all tracks from all playlists
+            axios(playlistResponse.data.items[i].tracks.href, {
+              method: 'GET',
+              headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
+            })
+            .then(trackResponse => {
 
-            let loadCardFlag = false;
+              // Loop over tracks in each playlist
+              for (let j = 0; j < trackResponse.data.total; j++)
+              {
+                
+                // Store all cards into temporary array
+                tempCard.push({
+                  // <View>
+                  //   <Text>{ playlistResponse.data.items[i].name }</Text>
+                  //   <Text>{ trackResponse.data.items[j].track.album.artists[0].name }</Text>
+                  //   <Text>{ trackResponse.data.items[j].track.name }</Text>
+                  // </View>
 
-            // Loop over tracks in each playlist
-            for (let j = 0; j < trackResponse.data.total; j++)
-            {
-              
-              // Store all cards into temporary array
-              tempCard.push({
-                // <View>
-                //   <Text>{ playlistResponse.data.items[i].name }</Text>
-                //   <Text>{ trackResponse.data.items[j].track.album.artists[0].name }</Text>
-                //   <Text>{ trackResponse.data.items[j].track.name }</Text>
-                // </View>
+                  // <Image source={trackResponse.data.items[j].track.album.images[1].url} />
 
-                // <Image source={trackResponse.data.items[j].track.album.images[1].url} />
-
-                playlist: playlistResponse.data.items[i].name ? playlistResponse.data.items[i].name : '',
-                artist: trackResponse.data.items[j].track.album.artists[0].name ? trackResponse.data.items[j].track.album.artists[0].name : '',
-                song: trackResponse.data.items[j].track.name ? trackResponse.data.items[j].track.name : '',
-              });
-              // url: trackResponse.data.items[j].track.album.images[1].url ? trackResponse.data.items[j].track.album.images[1].url : ''
-              // console.log(trackResponse.data.items[j].track.album.images[1].url);
-              // if (tempCard.length == totalTracks) loadCardFlag = true;
-            }
-            
-            // console.log('i: ' + i);
-            // console.log('playlistResponse.data.total: ' + playlistResponse.data.total);
-            // console.log(card[j].song);
-            if (loadCardFlag)
-            {
-              console.log("card now set to tempCard and length printed");
-              setCard(tempCard);
-              console.log('card length: ' + card.length);
-              console.log("Api no longer loading");
-              isLoading(false);
-              // console.log(card[0].artist);
-            }
-          })
-          // console.log('reached here')
+                  playlist: playlistResponse.data.items[i].name ? playlistResponse.data.items[i].name : '',
+                  artist: trackResponse.data.items[j].track.album.artists[0].name ? trackResponse.data.items[j].track.album.artists[0].name : '',
+                  song: trackResponse.data.items[j].track.name ? trackResponse.data.items[j].track.name : '',
+                  url: trackResponse.data.items[j].track.album.images[1].url ? trackResponse.data.items[j].track.album.images[1].url : ''
+                });
+                // console.log(trackResponse.data.items[j].track.name);
+                // if (tempCard.length == totalTracks) loadCardFlag = true;
+              }
+            })
+            .catch(e => { 
+              console.log(e) 
+            })
+          );
         }
 
-
-        // Set card array to temporary array - prevents constant appending
-        // for (let i = 0; i < card.length; i++)
-        //   console.log(card[i]);
-        // console.log(card.length);
-        // console.log();
+        Promise.all(promises).then(() => {
+          // console.log("card now set to tempCard");
+          setCard(tempCard);
+          isLoading(false);
+          // console.log("Api no longer loading");
+          // console.log(tempCard);
+          // console.log();
+        });
+        
+        // console.log('Should only print after promise fulfillment');
       })
-
-
     });
-
   }, []);
+  // .then(() => {
+  //   console.log(card);
+  //   console.log('card length: ' + card.length);
 
+  // });
+  
   // SampleFunction=(item)=>{
  
   //   Alert.alert(item);
@@ -143,9 +142,17 @@ export default function Home() {
       {loading ? (
         <Text style={{color: 'white'}}>Loading</Text>
         ) : (
-        <Text style={{color: 'white'}}>Done Loading</Text>
-        // <Text style={{color: 'white'}}>{card[0].song}{card[16].song}</Text>
+        // <Text style={{color: 'white'}}>Done Loading</Text>
+        <View style={{alignItems: 'center'}}>
+          <Text style={{color: 'white'}}>{add}</Text>
+          <Text style={{color: 'white'}}>{card[add].playlist}</Text>
+          <Text style={{color: 'white'}}>{card[add].artist}</Text>
+          <Text style={{color: 'white'}}>{card[add].song}</Text>
+          <Text style={{color: 'white'}}>{card[add].url}</Text>
+          <Image source={{uri: card[10].url}} />
+        </View>
       )}
+      <Button onPress={addIncrement} title='Load Next Card' />
 
     </ImageBackground>
 
