@@ -35,6 +35,11 @@ export default function Home() {
 
   const callAPI = () => 
   {
+    // Start looping through songs at first index
+    setAdd(0);
+
+    isLoading(true);
+
       // Get permission from Spotify by sending token
       axios('https://accounts.spotify.com/api/token', {
         headers: {
@@ -48,8 +53,7 @@ export default function Home() {
         // Set token to access token
         setToken(tokenResponse.data.access_token);
 
-        // Start looping through songs at first index
-        setAdd(0);
+        
         
         // Fetch all public playlists from a user theadoxbox 12162983687
         axios(`https://api.spotify.com/v1/users/${input}/playlists`, {
