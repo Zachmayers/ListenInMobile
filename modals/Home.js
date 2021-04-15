@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useStateRef } from 'react';
-import { StyleSheet, View, TextInput, Button, Image, ImageBackground, Text, Modal, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TextInput, Button, Image, ImageBackground, Text, KeyboardAvoidingView, Modal, TouchableOpacity, Dimensions } from 'react-native';
 
 import base64 from 'react-native-base64';
 import { ClientId, ClientSecret } from './Credentials';
@@ -125,28 +125,36 @@ export default function Home() {
 
   return (
 
-    <ImageBackground source={require('../assets/bluePurpleBG.jpg')} style={ styles.modalBackground }>
+    <ImageBackground style={styles.modalBackground} source={require('../assets/bluePurpleBG.jpg')} style={ styles.modalBackground }>
 
-      <View >
-        <TextInput style={styles.input} placeholder='Enter Username' onChangeText={name => setInput(name)} />
-        <Button onPress={callAPI} title='Search User' />
-      </View>
+      <KeyboardAvoidingView style={{flex: 1}} behavior='padding'>
 
-      {loading ? (
-        <Text style={{color: 'white'}}>Loading</Text>
-        ) : (
-        <View style={{alignItems: 'center'}}>
-          <Text style={{color: 'white'}}>{add}</Text>
-          <Text style={{color: 'white'}}>{card[add].playlist}</Text>
-          <Text style={{color: 'white'}}>{card[add].artist}</Text>
-          <Text style={{color: 'white'}}>{card[add].song}</Text>
-          {/* <Text style={{color: 'white'}}>{card[add].url}</Text> */}
-          <Image style={{width: 150, height: 150}} source={{uri: card[add].url }} />
-          <Text style={{color: 'white'}}>{ Compliment[random] }</Text>
-          <Button onPress={incrementAndRandom} title='Load Next Card' />
+        <View style={styles.searchBanner}>
+          <TextInput style={styles.input} placeholder='Enter Username' onChangeText={name => setInput(name)} />
+          <Button style={{width: 80, height: 40}} onPress={callAPI} title='Search User' />
         </View>
-      )}
+
+        {loading ? (
+          <Text style={styles.loading}>Loading...</Text>
+          ) : (
+          <View style={{alignItems: 'center'}}>
+
+            <View style={styles.polaroid}>
+              <View style={styles.shadow}>
+                <Image style={styles.image} source={{uri: card[add].url }} />
+              </View>
+              <Text style={styles.polaroidText}>{card[add].playlist}</Text>
+              <Text style={styles.polaroidText}>{card[add].artist}</Text>
+              <Text style={styles.polaroidText}>{card[add].song}</Text>
+            </View>
+
+            <Text style={{color: 'white'}}>{ Compliment[random] }</Text>
+            <Button style={{top: 40}} onPress={incrementAndRandom} title='Load Next' />
+            <Button styles={{top: 50}} title='LOGOUT' />
+          </View>
+        )}
       
+      </KeyboardAvoidingView>
 
     </ImageBackground>
 
@@ -167,22 +175,68 @@ export default function Home() {
 const styles = StyleSheet.create({
   modalBackground:
     {
-        backgroundColor: 'blue',
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'space-around'
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
     },
   searchBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    top: 40,
+    paddingLeft: 17,
       
   },
   input: {
-    width: 200,
+    width: 183,
     height: 40,
     margin: 12,
     borderWidth: 1,
     backgroundColor: 'white',
     borderRadius: 50,
     textAlign: 'center'
+  },
+  image: {
+    width: 275,
+    height: 200,
+    borderRadius: 3,
+    borderWidth: 50,
+    // left: -37,
+  },
+  polaroid: {
+    backgroundColor: 'white',
+    borderRadius: 3,
+    top: 40,
+    width: 300,
+    height: 400,
+    alignItems: 'center',
+    borderColor: 'black',
+  },
+  shadow: {
+    width: 275,
+    height: 200,
+    elevation: 8,
+    backgroundColor:'#d9d9d9',
+    top: 20,
+    // shadowColor: "#000000",
+    // shadowOpacity: 0.8,
+    // shadowRadius: 2,
+    // shadowOffset: {
+    //   height: 1,
+    //   width: 1
+    // }
+  },
+  polaroidText: {
+    top: 40,
+    color: 'black',
+  },
+  loading: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 40,
+    top: 250,
+    left: 95,
   }
 });
 
