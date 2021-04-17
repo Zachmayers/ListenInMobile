@@ -8,7 +8,7 @@ export default function SignIn( props ) {
     return (
         <ImageBackground source={require('../assets/bluePurpleBG.jpg')} style={ styles.modalBackground }>
             <Text style={ styles.title }>Sign In</Text>
-            <View style={ {top: 25} }>
+            {/* <View style={ {top: 25} }>
                 <TextInput
                     style={styles.textInput}
                     placeholder='First Name'
@@ -29,7 +29,7 @@ export default function SignIn( props ) {
                     style={styles.textInput}
                     placeholder='Password'
                 />
-            </View>
+            </View> */}
             
             {/* Call API to sign up onPress() and collect data from text fields */}
             <TouchableOpacity>
