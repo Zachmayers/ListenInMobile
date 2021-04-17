@@ -3,16 +3,16 @@ import { StyleSheet, Text, View, TextInput, ImageBackground, Button, TouchableOp
 import axios from 'axios';
 import Home from './Home'
 
-// import RoundButton from '../components/button/RoundButton'
-
 export default function Login( props ) {
 
+    // Used to submit username to API
     const [user, setUser] = useState('');
+    // Used to submit password to API
     const [password, setPassword] = useState('');
-    // const [canLogin, setCanLogin] = useState(false);
+    // Used to open Home page modal
     const [homeOpen, setHomeOpen] = useState(false);
 
-
+    // Call Login API, if successful, go to home page, otherwise nothing
     function submitLogin() {
         axios.post('http://cop4331g15.herokuapp.com/api/Login', {
             Username: user,
@@ -24,11 +24,7 @@ export default function Login( props ) {
         })
     }
 
-    // Testing
-    // easy
-    
-    // Check typeof undefined == undefined for variables that may not exist in url/tracks
-
+    // Content of page
     return (
         <ImageBackground style={styles.background} source={require('../assets/bluePurpleBG.jpg')}>
             <View style={styles.modalBackground}>
@@ -64,6 +60,7 @@ export default function Login( props ) {
     )
 }
 
+// Styles
 const styles = StyleSheet.create({
     background: {
         position: 'absolute',
@@ -105,7 +102,6 @@ const styles = StyleSheet.create({
         borderColor: 'black'
     },
     buttonText: {
-        fontFamily: 'Roboto_300Light',
         color: 'white',
         textTransform: 'uppercase',
         fontSize: 25,

@@ -1,22 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, View, Image, ImageBackground, Text, Modal, TouchableOpacity, Linking } from 'react-native';
-
 import RoundButton from './components/button/RoundButton'
 import Login from './modals/Login'
-// import SignIn from './modals/SignIn'
-// import ResetPassword from './modals/ResetPassword'
-// import Home from './modals/Home'
 import ListenInIcon from './assets/Title-img-1.svg'
 
 export default function App() {
 
+  // If true, open in login modal
   const [loginOpen, setLoginOpen] = useState(false);
-  // const [signInOpen, setSignInOpen] = useState(false);
-  // const [resetOpen, setResetOpen] = useState(false);
-  // Should initially be set to false
-  // const [homeOpen, setHomeOpen] = useState(false);
-
+  
   return (
     <ImageBackground source={require('./assets/bluePurpleBG.jpg')} style={ styles.background }>
 
@@ -28,7 +20,7 @@ export default function App() {
       {/* Logo png */}
       <Image style={ styles.logo } source={require('./assets/Logo-Pink.png')} />
 
-      {/* Login Button and Sign Up Button */}
+      {/* Login Button and Sign Up Button (Sign Up redirects to the Web App) */}
       <View style={ styles.alignButton }> 
         <RoundButton updateModal={setLoginOpen} title='Login'/>
         <TouchableOpacity onPress={() => Linking.openURL('http://cop4331g15.herokuapp.com/')}>
@@ -38,7 +30,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
       
-      {/* Reset password */}
+      {/* Reset password redirects to Web App */}
       <TouchableOpacity style={{bottom: 100}} onPress={() => setResetOpen(true)}>
         <View>
         <Text style={ {color: 'white', fontWeight: 'bold'}} onPress={() => Linking.openURL('http://cop4331g15.herokuapp.com/')}>
@@ -51,26 +43,11 @@ export default function App() {
       <Modal visible={loginOpen} animationType='slide'>
         <Login updateModal={setLoginOpen} />
       </Modal>
-
-      {/* Sign In Modal */}
-      {/* <Modal visible={signInOpen} animationType='slide' >
-        <SignIn updateModal={setSignInOpen} />
-      </Modal> */}
-
-      {/* Reset Password Modal */}
-      {/* <Modal visible={resetOpen} animationType='slide'>
-        <ResetPassword updateModal={setResetOpen}/>
-      </Modal> */}
-
-      {/* Home page modal */}
-      {/* <Modal visible={homeOpen} animationType='fade'>
-        <Home />
-      </Modal> */}
-
     </ImageBackground>
   );
 }
 
+// Styles used
 const styles = StyleSheet.create({
   background: {
     // flex: 1,
@@ -102,7 +79,6 @@ const styles = StyleSheet.create({
         borderColor: 'black'
     },
     buttonText: {
-        fontFamily: 'Roboto_300Light',
         color: 'white',
         textTransform: 'uppercase',
         fontSize: 25,
