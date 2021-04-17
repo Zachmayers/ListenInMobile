@@ -127,7 +127,7 @@ export default function Home() {
 
     <ImageBackground style={styles.modalBackground} source={require('../assets/bluePurpleBG.jpg')} style={ styles.modalBackground }>
 
-      <KeyboardAvoidingView style={{flex: 1}} behavior='padding'>
+      <KeyboardAvoidingView style={{flex: 1, top: 30}} behavior='padding'>
 
         <View style={styles.searchBanner}>
           <TextInput style={styles.input} placeholder='Enter Username' onChangeText={name => setInput(name)} />
@@ -143,14 +143,15 @@ export default function Home() {
               <View style={styles.shadow}>
                 <Image style={styles.image} source={{uri: card[add].url }} />
               </View>
-              <Text style={styles.polaroidText}>{card[add].playlist}</Text>
-              <Text style={styles.polaroidText}>{card[add].artist}</Text>
-              <Text style={styles.polaroidText}>{card[add].song}</Text>
+              <Text style={[styles.polaroidText, {fontWeight: 'bold', fontSize: 20}]}>{card[add].playlist}</Text>
+              <Text style={[styles.polaroidText, {top: 50, fontSize: 18, textAlign: 'center'}]}>{card[add].artist} - {card[add].song}</Text>
+              <Text style={[styles.polaroidText, {top: 70, fontSize: 15, textAlign: 'center', fontStyle: 'italic', color: 'rgb(75, 75, 75)'}]}>"{Compliment[random]}"</Text>
             </View>
 
-            <Text style={{color: 'white'}}>{ Compliment[random] }</Text>
-            <Button style={{top: 40}} onPress={incrementAndRandom} title='Load Next' />
-            <Button styles={{top: 50}} title='LOGOUT' />
+            <View style={styles.buttonBottom}>
+              <Button style={{top: 40}} onPress={incrementAndRandom} title='Load Next' />
+              <Button styles={{top: 50}} title='  LOGOUT  ' />
+            </View>
           </View>
         )}
       
@@ -230,6 +231,7 @@ const styles = StyleSheet.create({
   polaroidText: {
     top: 40,
     color: 'black',
+    flexShrink: 1,
   },
   loading: {
     color: 'white',
@@ -237,6 +239,12 @@ const styles = StyleSheet.create({
     fontSize: 40,
     top: 250,
     left: 95,
+  },
+  buttonBottom: {
+    width: 200,
+    top: 50,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   }
 });
 

@@ -14,6 +14,8 @@ export default function App() {
   const [loginOpen, setLoginOpen] = useState(false);
   const [signInOpen, setSignInOpen] = useState(false);
   const [resetOpen, setResetOpen] = useState(false);
+  // Should initially be set to false
+  const [homeOpen, setHomeOpen] = useState(true);
 
   return (
     <ImageBackground source={require('./assets/bluePurpleBG.jpg')} style={ styles.background }>
@@ -57,7 +59,7 @@ export default function App() {
       </Modal>
 
       {/* Home page modal */}
-      <Modal visible={true} animationType='fade'>
+      <Modal visible={homeOpen} animationType='fade'>
         <Home />
       </Modal>
 

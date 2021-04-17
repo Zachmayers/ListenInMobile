@@ -12,5 +12,9 @@ export const Compliment = [
     'This is one of our FAVE songs!',
     'We should see your songs more often!',
     'Do you hear that? It is another awesome song!',
-    'Keep making more playlists with songs like these!'
+    'Keep making more playlists with songs like these!',
+    'What other amazing songs are you hiding from us?!',
+    'This song should be illegal for how rad it is!',
+    'Our team has to listen to this song!',
+    'WHAT? You know this artist too!?',
 ]
