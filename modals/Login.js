@@ -33,7 +33,7 @@ export default function Login( props ) {
             <View style={ {top: 25} }>
                 <TextInput
                     style={styles.textInput}
-                    placeholder='Email'
+                    placeholder='Username'
                     onChangeText={user => setUser(user)}
                     />
                 <TextInput
