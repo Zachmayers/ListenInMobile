@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, ImageBackground, Button, TouchableOpacity, Modal, Dimensions} from 'react-native';
 import axios from 'axios';
 import Home from './Home'
+import base64 from 'react-native-base64';
 
 export default function Login( props ) {
 
@@ -12,6 +13,7 @@ export default function Login( props ) {
     // Used to open Home page modal
     const [homeOpen, setHomeOpen] = useState(false);
 
+    // Base 64 encryption
     // Call Login API, if successful, go to home page, otherwise nothing
     function submitLogin() {
         axios.post('http://cop4331g15.herokuapp.com/api/Login', {
@@ -23,6 +25,19 @@ export default function Login( props ) {
             console.log(e);
         })
     }
+
+    // No encryption
+    // Call Login API, if successful, go to home page, otherwise nothing
+    // function submitLogin() {
+    //     axios.post('http://cop4331g15.herokuapp.com/api/Login', {
+    //         Username: user,
+    //         Password: password
+    //     }).then(response => {
+    //         response.status == '442' ? setHomeOpen(false) : setHomeOpen(true);
+    //     }).catch(e => {
+    //         console.log(e);
+    //     })
+    // }
 
     // Content of page
     return (
@@ -39,7 +54,7 @@ export default function Login( props ) {
                 <TextInput
                     style={styles.textInput}
                     placeholder='Password'
-                    onChangeText={password => setPassword(password)}
+                    onChangeText={password => setPassword(base64.encode(password))}
                     secureTextEntry={true}
                     />
             </View>
