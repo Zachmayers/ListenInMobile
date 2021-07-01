@@ -1,0 +1,265 @@
+2021-05-25 12:37:17,901:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-25 12:37:17,901:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-25 12:37:18,458:INFO:__main__:Finished execution of script reports_on_matched_data, merged to file /Users/zachmayers/Desktop/hoplite/FFI-LP Data 0501-0524.csv
+2021-05-25 12:37:18,486:INFO:__main__:Finished execution of script reports_on_matched_data, merged to file /Users/zachmayers/Desktop/hoplite/FFI-Ringba Data 0501-0524.csv
+2021-05-25 19:09:17,629:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-25 19:09:17,630:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-25 19:09:37,547:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-25 19:09:37,547:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-25 19:09:53,477:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-25 19:09:53,478:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-25 19:09:53,993:INFO:__main__:Finished execution of script reports_on_matched_data, merged
+2021-05-25 19:09:53,998:INFO:__main__:Finished execution of script reports_on_matched_data, merged
+2021-05-25 19:14:42,745:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-25 19:14:42,746:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-25 19:14:43,256:INFO:__main__:Merged FFI - LP
+2021-05-25 19:14:43,259:INFO:__main__:Merged FFI - Ringba
+2021-05-25 19:14:43,259:INFO:__main__:Intiallized excel file FFI - 0501-0524Ringba LP.xlsx
+2021-05-25 19:14:44,304:INFO:__main__:Added sheet FFI-LP Data 0501-0524
+2021-05-25 19:14:45,917:INFO:__main__:Added sheet FFI-Ringba Data 0501-0524
+2021-05-25 19:14:48,740:INFO:__main__:Finished execution of script
+2021-05-26 14:26:46,909:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:26:46,910:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:34:22,207:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:34:22,207:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='Ringba_test.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:34:22,973:INFO:__main__:Merged FFI - LP
+2021-05-26 14:34:22,977:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:34:22,977:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:34:23,969:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:34:25,536:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:34:28,364:INFO:__main__:Finished execution of script
+2021-05-26 14:41:33,600:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:41:33,601:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:41:34,350:INFO:__main__:Merged FFI - LP
+2021-05-26 14:41:34,353:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:41:34,353:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:41:38,255:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:41:39,440:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:41:42,480:INFO:__main__:Finished execution of script
+2021-05-26 14:43:27,315:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:43:27,316:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:43:28,064:INFO:__main__:Merged FFI - LP
+2021-05-26 14:43:28,067:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:43:28,068:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:43:32,250:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:43:33,458:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:43:36,461:INFO:__main__:Finished execution of script
+2021-05-26 14:44:32,241:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:44:32,242:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:44:33,010:INFO:__main__:Merged FFI - LP
+2021-05-26 14:44:33,014:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:44:33,015:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:44:36,870:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:44:38,018:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:44:41,160:INFO:__main__:Finished execution of script
+2021-05-26 14:46:44,166:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:46:44,166:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:46:44,917:INFO:__main__:Merged FFI - LP
+2021-05-26 14:46:44,921:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:46:44,921:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:46:48,813:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:46:49,957:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:46:53,088:INFO:__main__:Finished execution of script
+2021-05-26 14:52:47,879:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:52:47,880:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:52:48,650:INFO:__main__:Merged FFI - LP
+2021-05-26 14:52:48,653:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:52:48,653:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:53:13,236:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:53:13,238:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:53:13,993:INFO:__main__:Merged FFI - LP
+2021-05-26 14:53:13,998:INFO:__main__:Merged FFI - Ringba
+2021-05-26 14:53:13,998:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 14:53:17,825:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 14:53:18,984:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 14:55:14,913:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:55:14,914:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:57:32,178:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:57:32,178:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 14:57:57,200:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 14:57:57,200:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:04:26,550:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:04:26,551:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:04:27,319:INFO:__main__:Merged FFI - LP
+2021-05-26 15:04:27,325:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:04:27,325:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:04:39,887:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:04:39,888:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:04:40,628:INFO:__main__:Merged FFI - LP
+2021-05-26 15:04:40,632:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:04:40,632:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:05:05,394:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:05:05,395:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:05:06,199:INFO:__main__:Merged FFI - LP
+2021-05-26 15:05:06,202:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:05:06,202:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:05:37,778:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:05:37,779:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:06:26,224:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:06:26,225:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:06:27,043:INFO:__main__:Merged FFI - LP
+2021-05-26 15:06:27,046:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:06:27,047:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:07:41,401:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:07:41,402:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:07:42,163:INFO:__main__:Merged FFI - LP
+2021-05-26 15:07:42,168:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:07:42,168:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:08:10,792:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-26 15:08:10,792:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-26 15:08:11,652:INFO:__main__:Merged FFI - LP
+2021-05-26 15:08:11,655:INFO:__main__:Merged FFI - Ringba
+2021-05-26 15:08:11,656:INFO:__main__:Intiallized excel file FFI - 0501-0525Ringba LP.xlsx
+2021-05-26 15:08:12,600:INFO:__main__:Added sheet FFI-LP Data 0501-0525
+2021-05-26 15:08:14,073:INFO:__main__:Added sheet FFI-Ringba Data 0501-0525
+2021-05-26 15:08:16,769:INFO:__main__:Finished execution of script
+2021-05-27 15:18:09,761:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:18:09,763:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:18:10,519:INFO:__main__:Merged FFI - LP
+2021-05-27 15:18:10,522:INFO:__main__:Merged FFI - Ringba
+2021-05-27 15:18:10,522:INFO:__main__:Intiallized excel file FFI - 0501-0526Ringba LP.xlsx
+2021-05-27 15:18:11,468:INFO:__main__:Added sheet FFI-LP Data 0501-0526
+2021-05-27 15:18:13,032:INFO:__main__:Added sheet FFI-Ringba Data 0501-0526
+2021-05-27 15:18:15,739:INFO:__main__:Finished execution of script
+2021-05-27 15:18:37,771:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:18:37,771:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:19:05,648:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:19:05,649:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:19:21,658:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:19:21,658:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:19:33,027:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:19:33,028:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:21:19,773:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:21:19,774:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:22:01,232:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:22:01,232:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:22:49,036:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:22:49,036:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:23:01,365:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:23:01,365:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:23:23,184:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-27 15:23:23,184:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-27 15:23:24,320:INFO:__main__:Merged FFI - LP
+2021-05-27 15:23:24,326:INFO:__main__:Merged FFI - Ringba
+2021-05-27 15:23:24,326:INFO:__main__:Intiallized excel file FFI - 0501-0526Ringba LP.xlsx
+2021-05-27 15:23:29,771:INFO:__main__:Added sheet FFI-LP Data 0501-0526
+2021-05-27 15:23:30,919:INFO:__main__:Added sheet FFI-Ringba Data 0501-0526
+2021-05-27 15:23:36,701:INFO:__main__:Finished execution of script
+2021-05-29 11:09:08,694:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-29 11:09:08,695:INFO:__main__:Namespace(leadspedia_file='LP_0401-0503.csv', onelink_file='FFI_Test.csv', ringba_file='ringba_0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-29 11:09:10,635:INFO:__main__:Merged FFI - LP
+2021-05-29 11:09:10,639:INFO:__main__:Merged FFI - Ringba
+2021-05-29 11:09:10,639:INFO:__main__:Intiallized excel file FFI - 0501-0528Ringba LP.xlsx
+2021-05-29 11:09:15,376:INFO:__main__:Added sheet FFI-LP Data 0501-0528
+2021-05-29 11:14:25,773:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-29 11:14:25,773:INFO:__main__:Namespace(leadspedia_file='LP 0501-0526.csv', onelink_file='OneLink 0501-0526.csv', ringba_file='Ringba 0501-0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-29 11:15:11,631:INFO:__main__:Started execution of script reports_on_matched_data
+2021-05-29 11:15:11,632:INFO:__main__:Namespace(leadspedia_file='LP 0501-0526.csv', onelink_file='OneLink 0501-0526.csv', ringba_file='Ringba 0501-0526.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-05-29 11:15:42,748:INFO:__main__:Merged FFI - LP
+2021-05-29 11:15:42,762:INFO:__main__:Merged FFI - Ringba
+2021-05-29 11:15:42,762:INFO:__main__:Intiallized excel file FFI - 0501-0528Ringba LP.xlsx
+2021-05-29 11:17:05,912:INFO:__main__:Added sheet FFI-LP Data 0501-0528
+2021-05-29 11:17:11,587:INFO:__main__:Added sheet FFI-Ringba Data 0501-0528
+2021-05-29 11:19:00,793:INFO:__main__:Finished execution of script
+2021-06-03 10:28:06,423:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-03 10:28:06,424:INFO:__main__:Namespace(leadspedia_file='LP-0603.csv', onelink_file='FFI-0603.csv', ringba_file='RINGBA_0603.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-03 10:28:52,438:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-03 10:28:52,438:INFO:__main__:Namespace(leadspedia_file='LP-0603.csv', onelink_file='FFI-0603.csv', ringba_file='RINGBA-0603.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-03 10:29:26,455:INFO:__main__:Merged FFI - LP
+2021-06-03 10:29:26,468:INFO:__main__:Merged FFI - Ringba
+2021-06-03 10:29:26,469:INFO:__main__:Intiallized excel file FFI - 0601-0602Ringba LP.xlsx
+2021-06-03 10:31:39,489:INFO:__main__:Added sheet FFI-LP Data 0601-0602
+2021-06-03 10:31:45,860:INFO:__main__:Added sheet FFI-Ringba Data 0601-0602
+2021-06-03 10:34:52,407:INFO:__main__:Finished execution of script
+2021-06-04 15:07:05,247:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-04 15:07:05,248:INFO:__main__:Namespace(leadspedia_file='LP-0604.csv', onelink_file='FFI-0604', ringba_file='RINGBA-0604.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-04 15:07:33,612:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-04 15:07:33,613:INFO:__main__:Namespace(leadspedia_file='LP-0604.csv', onelink_file='FFI-0604.csv', ringba_file='RINGBA-0604.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-04 15:08:03,044:INFO:__main__:Merged FFI - LP
+2021-06-04 15:08:03,053:INFO:__main__:Merged FFI - Ringba
+2021-06-04 15:08:03,053:INFO:__main__:Intiallized excel file FFI - 0601-0603Ringba LP.xlsx
+2021-06-04 15:09:06,506:INFO:__main__:Added sheet FFI-LP Data 0601-0603
+2021-06-04 15:09:11,382:INFO:__main__:Added sheet FFI-Ringba Data 0601-0603
+2021-06-04 15:10:41,777:INFO:__main__:Finished execution of script
+2021-06-05 20:37:34,962:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-05 20:37:34,979:INFO:__main__:Namespace(leadspedia_file='LP-0605.csv', onelink_file='FFI-0605', ringba_file='RINGBA-0605.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-05 20:37:56,701:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-05 20:37:56,701:INFO:__main__:Namespace(leadspedia_file='LP-0605.csv', onelink_file='FFI-0605', ringba_file='RINGBA-0605.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-05 20:38:01,320:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-05 20:38:01,320:INFO:__main__:Namespace(leadspedia_file='LP-0605.csv', onelink_file='FFI-0605', ringba_file='RINGBA-0605.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller IDclear')
+2021-06-05 20:38:06,346:INFO:__main__:Started execution of script reports_on_matched_data
+2021-06-05 20:38:06,346:INFO:__main__:Namespace(leadspedia_file='LP-0605.csv', onelink_file='FFI-0605.csv', ringba_file='RINGBA-0605.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-05 20:38:36,340:INFO:__main__:Merged FFI - LP
+2021-06-05 20:38:36,351:INFO:__main__:Merged FFI - Ringba
+2021-06-05 20:38:36,351:INFO:__main__:Intiallized excel file FFI - 0601-0604Ringba LP.xlsx
+2021-06-05 20:39:37,939:INFO:__main__:Added sheet FFI-LP Data 0601-0604
+2021-06-05 20:39:42,909:INFO:__main__:Added sheet FFI-Ringba Data 0601-0604
+2021-06-05 20:41:10,502:INFO:__main__:Finished execution of script
+2021-06-07 10:59:53,343:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='FFI-0607.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-07 10:59:53,344:INFO:__main__:Started execution of script  - 0601-0606
+2021-06-07 11:00:22,791:INFO:__main__:Merged FFI - LP
+2021-06-07 11:02:04,281:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='FFI-0607.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-07 11:02:04,282:INFO:__main__:Started execution of script  - 0601-0606
+2021-06-07 11:02:33,409:INFO:__main__:Merged FFI - LP
+2021-06-07 11:05:04,556:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='FFI-0607.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-07 11:05:04,557:INFO:__main__:Started execution of script  - 0601-0606
+2021-06-07 11:05:34,209:INFO:__main__:Merged FFI - LP
+2021-06-07 11:05:34,210:INFO:__main__:Matched 23586 rows 
+2021-06-07 11:05:34,220:INFO:__main__:Merged FFI - Ringba
+2021-06-07 11:05:34,220:INFO:__main__:Matched 16847 rows 
+2021-06-07 11:05:34,220:INFO:__main__:Intiallized excel file FFI - 0601-0606Ringba LP.xlsx
+2021-06-07 11:07:07,855:INFO:__main__:Added sheet FFI-LP Data 0601-0606
+2021-06-07 11:07:12,822:INFO:__main__:Added sheet FFI-Ringba Data 0601-0606
+2021-06-07 11:11:16,059:INFO:__main__:Finished execution of script2021-06-09 00:24:06,273:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI_.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 00:24:06,274:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-09 00:24:33,662:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI_.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 00:24:33,664:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-09 00:24:55,736:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI_.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 00:24:55,737:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-09 00:25:26,939:INFO:__main__:Merged FFI - LP
+2021-06-09 00:25:26,940:INFO:__main__:Matched 538983 rows 
+2021-06-09 00:25:26,943:INFO:__main__:Merged FFI - Ringba
+2021-06-09 00:25:26,944:INFO:__main__:Matched 1215 rows 
+2021-06-09 00:25:26,944:INFO:__main__:Intiallized excel file FFI - 0601-0608Ringba LP.xlsx
+2021-06-09 14:22:04,224:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI______.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 14:22:04,225:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-09 14:22:43,251:INFO:__main__:Merged FFI - LP
+2021-06-09 14:22:43,253:INFO:__main__:Matched 1426115 rows 
+2021-06-09 14:22:43,256:INFO:__main__:Merged FFI - Ringba
+2021-06-09 14:22:43,256:INFO:__main__:Matched 1379 rows 
+2021-06-09 14:22:43,256:INFO:__main__:Intiallized excel file FFI - 0601-0608Ringba LP.xlsx
+2021-06-09 14:23:53,745:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI______.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 14:23:53,745:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-09 14:24:32,191:INFO:__main__:Merged FFI - LP
+2021-06-09 14:24:32,191:INFO:__main__:Matched 1426115 rows 
+2021-06-09 14:24:32,194:INFO:__main__:Merged FFI - Ringba
+2021-06-09 14:24:32,194:INFO:__main__:Matched 1379 rows 
+2021-06-09 14:24:32,194:INFO:__main__:Intiallized excel file FFI - 0601-0608Ringba LP.xlsx
+2021-06-09 14:33:23,920:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='__FFI______.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-09 14:33:23,921:INFO:__main__:Started execution of script  - 0601-0608
+2021-06-10 15:04:57,653:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='download.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-10 15:04:57,654:INFO:__main__:Started execution of script  - 0601-0609
+2021-06-10 15:05:17,134:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='downloaded.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-10 15:05:17,135:INFO:__main__:Started execution of script  - 0601-0609
+2021-06-10 15:05:45,733:INFO:__main__:Merged FFI - LP
+2021-06-10 15:05:45,734:INFO:__main__:Matched 735 rows 
+2021-06-10 15:05:45,736:INFO:__main__:Merged FFI - Ringba
+2021-06-10 15:05:45,736:INFO:__main__:Matched 735 rows 
+2021-06-10 15:05:45,736:INFO:__main__:Intiallized excel file FFI - 0601-0609Ringba LP.xlsx
+2021-06-10 15:05:48,608:INFO:__main__:Added sheet FFI-LP Data 0601-0609
+2021-06-10 15:05:48,834:INFO:__main__:Added sheet FFI-Ringba Data 0601-0609
+2021-06-10 15:05:51,827:INFO:__main__:Finished execution of script
+2021-06-10 15:23:57,263:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='FFI-0606-0607.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-10 15:23:57,264:INFO:__main__:Started execution of script  - 0601-0609
+2021-06-10 15:24:41,859:INFO:__main__:Namespace(leadspedia_file='LP-0607.csv', onelink_file='FFI-0606-0607.csv', ringba_file='RINGBA-0607.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-10 15:24:41,860:INFO:__main__:Started execution of script  - 0601-0609
+2021-06-10 15:24:53,497:INFO:__main__:Namespace(leadspedia_file='LP-0605.csv', onelink_file='FFI-0606-0607.csv', ringba_file='RINGBA-0605.csv', leadspedia_phone_column='Phone Home', onelink_phone_column='Day_Phone', ringba_phone_column='Caller ID')
+2021-06-10 15:24:53,498:INFO:__main__:Started execution of script  - 0601-0609
+2021-06-10 15:25:20,938:INFO:__main__:Merged FFI - LP
+2021-06-10 15:25:20,938:INFO:__main__:Matched 736 rows 
+2021-06-10 15:25:20,940:INFO:__main__:Merged FFI - Ringba
+2021-06-10 15:25:20,940:INFO:__main__:Matched 735 rows 
+2021-06-10 15:25:20,941:INFO:__main__:Intiallized excel file FFI - 0601-0609Ringba LP.xlsx
+2021-06-10 15:25:23,808:INFO:__main__:Added sheet FFI-LP Data 0601-0609
+2021-06-10 15:25:24,026:INFO:__main__:Added sheet FFI-Ringba Data 0601-0609
+2021-06-10 15:25:27,012:INFO:__main__:Finished execution of script
