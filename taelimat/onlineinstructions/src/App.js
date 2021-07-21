@@ -87,14 +87,6 @@ function Main(props) {
       {/* <Route exact path="/" render={(p) => <Home {...p} user={props.user} setUser={props.setUser}/>} /> */}
       <Route exact path="/About" component={GeometricMacraweave} />
       <Route exact path="/Login" render={(p) => <Login {...p} user={props.user} />} />
-      {/* <Route exact path="/About" render={(p) => <About {...p} user={props.user} />} />
-      <Route exact path="/TopArtists" render={(p) => <TopArtists {...p} user={props.user} />} />
-      <Route exact path="/TopTracks" render={(p) => <TopTracks {...p} user={props.user} />} />
-      <Route exact path="/DiscoverNew" render={(p) => <DiscoverNew {...p} user={props.user} />} />
-      <Route path="/TopTracksArtist/:id/:name" render={(p) => <TopTracksArtist {...p} user={props.user}/>} />
-      <Route path="/verify" render={(p) => <Token {...p} user={props.user}/>}/>
-      <Route path="/reset" render={(p) => <NewPassword {...p} user={props.user}/>}/>
-      <Route path="/Delete" render={(p) => <Delete {...p} user={props.user} />} /> */}
     </Switch>
   );
 }
